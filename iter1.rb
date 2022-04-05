@@ -15,4 +15,14 @@ ventas = {
 
 # Crear el programa iter1.rb que itere el hash ventas y muestre en pantalla todas los ventas
 # superiores a 45000 (sólo el valor de la venta).
+# Select y reject son las mejores formas para filtrar
 
+# selected_sales = ventas.select do |key, value|
+#     value > 45000
+# end
+
+# print selected_sales.values
+
+ventas.each do |key, value|
+    print "#{value}\s" if value >45000
+end
